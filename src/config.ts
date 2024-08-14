@@ -1,3 +1,4 @@
 export const configuration = {
-    username: 'default'
+    username: 'cmd',
+    port: 3001
 }
