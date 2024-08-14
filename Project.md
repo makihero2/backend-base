@@ -1,0 +1,1 @@
+este proyecto es para mejorar el uso de git y utilizar github como control de versiones.
