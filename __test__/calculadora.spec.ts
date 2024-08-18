@@ -63,6 +63,16 @@ describe("Calculadora", () => {
         a = undefined;
         b = 2;
         expect(() => { dividir(a, b) }).toThrow("No se puede dividir indefinidos");
+
+        // Caso de prueba: división con un número negativo
+        a = 20;
+        b = -4;
+        expect(() => { dividir(a, b) }).toThrow("No se puede dividir números negativos");
+
+         // Caso de prueba: división con números fraccionados
+        a = 40;
+        b = 1.5;
+        expect(() => { dividir(a, b) }).toThrow("No se puede dividir números fraccionados");
     });
 
     test("calcular potencia", () => {

@@ -9,9 +9,7 @@ function operar(operacion: string, a: number, b: number) {
         return dividir(a, b);
     } else if (operacion === 'potencia') {
         return potencia(a, b);
-
     }
-
 }
 
 
