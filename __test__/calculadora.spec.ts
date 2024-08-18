@@ -103,13 +103,18 @@ describe("Calculadora", () => {
          exponente = 4;
          expect(potencia(base, exponente)).toBe(16);  // (-2)^4 = 16    
          
-         
-        // Caso de prueba: Base y exponente indefinido
-        base = undefined;
-        exponente = undefined;
-        expect(() => { potencia(base, exponente) }).toThrow("Base y exponente indefinido");
-
+       
     });
+
+    test("potencia de números", () => {
+        // Caso de prueba: Base y exponente indefinido
+        let base: any = undefined;
+        let exponente: any = undefined;
+        expect(() => { potencia(base, exponente) }).toThrow("Base y exponente indefinido");
+    
+        // Otros casos de prueba...
+    });
+    
 
     test("calcular factorial", () => {
         let n: any = 5;
