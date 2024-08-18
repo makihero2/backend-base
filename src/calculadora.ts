@@ -91,7 +91,7 @@ function potencia(base: number, exponente: number) {
 
     if (base === undefined || exponente === undefined) {
         console.log("retornando throw");
-        throw new Error("Base o exponente indefinido");
+        throw new Error("Base y exponente indefinido");
     }
 
 
