@@ -10,7 +10,10 @@ function operar(operacion: string, a: number, b: number) {
     } else if (operacion === 'potencia') {
         return potencia(a, b);
 
+    }
+
 }
+
 
 function suma(a: number, b: number) {
 
