@@ -102,10 +102,6 @@ function potencia(base: number, exponente: number) {
         throw new Error("No se puede calcular la potencia con un exponente negativo");
     }
 
-    if (exponente < 0) {
-        throw new Error("No se puede calcular la potencia con un exponente negativo");
-    }
-
     return base ** exponente;
 }
 
