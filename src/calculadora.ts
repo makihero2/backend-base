@@ -3,7 +3,13 @@ function operar(operacion: string, a: number, b: number) {
         return suma(a, b);
     } else if (operacion === 'resta') {
         return restar(a, b);
-    }
+    } else if (operacion ==='multiplicar'){
+        return multiplicar(a, b);
+    }    else if (operacion ==='dividir'){
+        return dividir(a, b);
+    } else if (operacion === 'potencia') {
+        return potencia(a, b);
+
 }
 
 function suma(a: number, b: number) {
