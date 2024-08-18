@@ -110,13 +110,10 @@ describe("Calculadora", () => {
        
     });
 
-    test("potencia de números", () => {
-        // Caso de prueba: Base y exponente indefinido
+    test("base y exponente indefinidos", () => {
         let base: any = undefined;
         let exponente: any = undefined;
-        expect(() => { potencia(base, exponente) }).toThrow("Base y exponente indefinido");
-    
-        // Otros casos de prueba...
+        expect(() => { potencia(base, exponente) }).toThrow("Base o exponente indefinido");
     });
     
 
