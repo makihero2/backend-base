@@ -68,6 +68,14 @@ function dividir(a: number, b: number) {
         throw new Error("No se puede dividir por cero");
     }
 
+    if (a < 0 || b < 0) {
+        throw new Error("No se puede dividir números negativos");
+    }
+
+    if (!Number.isInteger(a) || !Number.isInteger(b)) {
+        throw new Error("No se puede dividir números fraccionados");
+    }
+
     return a / b;
 }
 
