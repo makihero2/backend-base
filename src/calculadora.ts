@@ -89,11 +89,6 @@ function potencia(base: number, exponente: number) {
         return NaN;
     }
 
-    if (base === undefined || exponente === undefined) {
-        console.log("retornando throw");
-        throw new Error("Base o exponente indefinido");
-    }
-
     if (exponente < 0) {
         throw new Error("No se puede calcular la potencia con un exponente negativo");
     }

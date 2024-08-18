@@ -109,12 +109,6 @@ describe("Calculadora", () => {
          expect(() => { potencia(base, exponente) }).toThrow("Base o exponente indefinido");
        
     });
-
-    test("base y exponente indefinidos", () => {
-        let base: any = undefined;
-        let exponente: any = undefined;
-        expect(() => { potencia(base, exponente) }).toThrow("Base o exponente indefinido");
-    });
     
 
     test("calcular factorial", () => {
