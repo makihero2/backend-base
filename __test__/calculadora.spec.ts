@@ -88,23 +88,20 @@ describe("Calculadora", () => {
         exponente = 2;
         expect(() => { potencia(base, exponente) }).toThrow("No se puede calcular la potencia de indefinidos");
     
-    });
-
-    test("potencia de números", () => {
-        // Caso de prueba: Exponente negativo
-        let base: any = 2;
-        let exponente: any = -3;
-        expect(() => { potencia(base, exponente) }).toThrow("No se puede calcular la potencia con un exponente negativo");
-
-        // Caso de prueba: Base negativa con exponente impar
-        base = -2;
-        exponente = 3;
-        expect(potencia(base, exponente)).toBe(-8);  // (-2)^3 = -8
-
-        // Caso de prueba: Base negativa con exponente par
-        base = -2;
-        exponente = 4;
-        expect(potencia(base, exponente)).toBe(16);  // (-2)^4 = 16    
+         // Caso de prueba: Exponente negativo
+         base = 2;
+         exponente = -3;
+         expect(() => { potencia(base, exponente) }).toThrow("No se puede calcular la potencia con un exponente negativo");
+ 
+         // Caso de prueba: Base negativa con exponente impar
+         base = -2;
+         exponente = 3;
+         expect(potencia(base, exponente)).toBe(-8);  // (-2)^3 = -8
+ 
+         // Caso de prueba: Base negativa con exponente par
+         base = -2;
+         exponente = 4;
+         expect(potencia(base, exponente)).toBe(16);  // (-2)^4 = 16     
 
     });
 
