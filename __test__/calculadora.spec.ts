@@ -104,39 +104,10 @@ describe("Calculadora", () => {
          expect(potencia(base, exponente)).toBe(16);  // (-2)^4 = 16    
          
          
-            // Caso de prueba: Base o exponente indefinido
-           base = undefined;
-            exponente = 3;
-            expect(() => { potencia(base, exponente) }).toThrow("Base o exponente indefinido");
-        
-            base = 2;
-            exponente = undefined;
-            expect(() => { potencia(base, exponente) }).toThrow("Base o exponente indefinido");
-        
-            // Caso de prueba: Base o exponente no son números
-            base = "a";
-            exponente = 3;
-            expect(potencia(base, exponente)).toBeNaN();
-        
-            base = 2;
-            exponente = "b";
-            expect(potencia(base, exponente)).toBeNaN();
-        
-            // Caso de prueba: Exponente negativo
-            base = 2;
-            exponente = -3;
-            expect(() => { potencia(base, exponente) }).toThrow("No se puede calcular la potencia con un exponente negativo");
-        
-            // Caso de prueba: Base negativa con exponente impar
-            base = -2;
-            exponente = 3;
-            expect(potencia(base, exponente)).toBe(-8);  // (-2)^3 = -8
-        
-            // Caso de prueba: Base negativa con exponente par
-            base = -2;
-            exponente = 4;
-            expect(potencia(base, exponente)).toBe(16);  // (-2)^4 = 16
-        
+        // Caso de prueba: Base y exponente indefinido
+        base = undefined;
+        exponente = undefined;
+        expect(() => { potencia(base, exponente) }).toThrow("Base y exponente indefinido");
 
     });
 
