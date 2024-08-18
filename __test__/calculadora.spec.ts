@@ -102,7 +102,11 @@ describe("Calculadora", () => {
          base = -2;
          exponente = 4;
          expect(potencia(base, exponente)).toBe(16);  // (-2)^4 = 16    
-         
+        
+         // Caso: ambos indefinidos
+         base = undefined;
+         exponente = undefined;
+         expect(() => { potencia(base, exponente) }).toThrow("Base o exponente indefinido");
        
     });
 
